@@ -1,0 +1,10 @@
+name: Clean Jupyter Notebooks
+
+on:
+  push:
+    branches: [master]   # <-- Changed from 'main' to 'master'
+  workflow_dispatch:     # Allows manual trigger from GitHub UI
+
+jobs:
+  clean:
+    uses: anubhav-auth/anubhav-auth/.github/workflows/strip-nb.yml@main
