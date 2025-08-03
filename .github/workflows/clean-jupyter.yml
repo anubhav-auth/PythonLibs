@@ -2,8 +2,11 @@ name: Clean Jupyter Notebooks
 
 on:
   push:
-    branches: [master]   # <-- Changed from 'main' to 'master'
-  workflow_dispatch:     # Allows manual trigger from GitHub UI
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   clean:
